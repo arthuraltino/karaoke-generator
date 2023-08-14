@@ -24,7 +24,7 @@ class KaraokeGenerator:
         title=None,
         genius_api_token=None,
         spotify_cookie=None,
-        model_name="UVR_MDXNET_KARA_2",
+        model_name="UVR-MDX-NET-Inst_Main",
         model_file_dir="/tmp/audio-separator-models",
         cache_dir="/tmp/karaoke-generator-cache",
         output_dir=None,
@@ -178,6 +178,7 @@ class KaraokeGenerator:
                 model_name=self.model_name,
                 model_file_dir=self.model_file_dir,
                 output_dir=self.output_dir,
+                use_cuda=True,
                 log_formatter=self.log_formatter,
                 log_level=self.log_level,
             )
